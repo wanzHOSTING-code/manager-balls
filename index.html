@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BRI Super League Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div><b>⚽ BSL MANAGER</b><span>Football Management</span></div>
+  <button id="saveBtn">💾 Simpan</button>
+</header>
+<div class="layout">
+<aside>
+  <div class="manager-card">
+    <div class="avatar">👔</div>
+    <div><b id="managerName">Manajer</b><small id="clubName">Belum memilih klub</small></div>
+  </div>
+  <nav>
+    <button data-page="home" class="active">🏠 Beranda</button>
+    <button data-page="squad">👥 Skuad</button>
+    <button data-page="tactics">🧠 Taktik</button>
+    <button data-page="schedule">📅 Jadwal</button>
+    <button data-page="league">🏆 Klasemen</button>
+    <button data-page="transfers">🔄 Transfer</button>
+  </nav>
+</aside>
+<main id="app"></main>
+</div>
+<div id="modal" class="modal hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
